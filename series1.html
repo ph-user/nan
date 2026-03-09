@@ -427,7 +427,7 @@
         lightboxImage.src = image.src;
         lightboxImage.alt = image.alt;
         lightboxImage.style.transform = `scale(${currentZoom})`;
-        lightboxTitle.textContent = image.title;
+        lightboxTitle.innerHTML = image.title;
         lightboxDetails.textContent = image.details;
         updateZoomIndicator();
       }
