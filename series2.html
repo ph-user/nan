@@ -352,37 +352,37 @@
         {
           src: "asset/20240718182750.jpg",
           alt: "Untitled (2021)",
-          title: "Untitled (2021)",
+          title: "Untitled <span class='text-sm font-normal'>(2021)</span>",
           details: "watercolour on paper, 594 X 420mm",
         },
         {
           src: "asset/20240718182756.jpg",
           alt: "Untitled (2021)",
-          title: "Untitled (2021)",
+          title: "Untitled <span class='text-sm font-normal'>(2021)</span>",
           details: "watercolour on paper, 594 X 420mm",
         },
         {
           src: "asset/20240718182804.jpg",
           alt: "Untitled (2021)",
-          title: "Untitled (2021)",
+          title: "Untitled <span class='text-sm font-normal'>(2021)</span>",
           details: "watercolour on paper, 594 X 420mm",
         },
         {
           src: "asset/20240718182808.jpg",
           alt: "Untitled (2021)",
-          title: "Untitled (2021)",
+          title: "Untitled <span class='text-sm font-normal'>(2021)</span>",
           details: "watercolour on paper, 594 X 420mm",
         },
         {
           src: "asset/20240718182812.jpg",
           alt: "Untitled (2021)",
-          title: "Untitled (2021)",
+          title: "Untitled <span class='text-sm font-normal'>(2021)</span>",
           details: "watercolour on paper, 594 X 420mm",
         },
         {
           src: "asset/20240718182756.jpg",
           alt: "Untitled (2021)",
-          title: "Untitled (2021)",
+          title: "Untitled <span class='text-sm font-normal'>(2021)</span>",
           details: "watercolour on paper, 594 X 420mm",
         },
       ];
@@ -450,7 +450,7 @@
         lightboxImage.src = image.src;
         lightboxImage.alt = image.alt;
         lightboxImage.style.transform = `scale(${currentZoom})`;
-        lightboxTitle.textContent = image.title;
+        lightboxTitle.innerHTML = image.title;
         lightboxDetails.textContent = image.details;
         updateZoomIndicator();
       }
