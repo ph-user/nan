@@ -1,301 +1,198 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Xinzhi Li</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#333333",
-              secondary: "#666666",
-            },
-            fontFamily: {
-              playfair: ['"Playfair Display"', "serif"],
-              raleway: ["Raleway", "sans-serif"],
-              Roman: ["Roman", "sans-serif"],
-              Bold: ["Bold", "san-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Xinzhi Li</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#333333",
+            secondary: "#666666",
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', "serif"],
+            raleway: ["Raleway", "sans-serif"],
+            Roman: ["Roman", "sans-serif"],
+            Bold: ["Bold", "san-serif"],
           },
         },
-      };
-    </script>
-    <style>
-      @font-face {
-        font-family: "Roman";
-        src: url("fonts/Times New Roman.ttf") format("truetype");
-      }
+      },
+    };
+  </script>
+  <style>
+    @font-face {
+      font-family: "Roman";
+      src: url("fonts/Times New Roman.ttf") format("truetype");
+    }
 
-      @font-face {
-        font-family: "Raleway-m";
-        src: url("fonts/Raleway-Medium.ttf") format("truetype");
-      }
+    @font-face {
+      font-family: "Raleway-m";
+      src: url("fonts/Raleway-Medium.ttf") format("truetype");
+    }
 
-      @font-face {
-        font-family: "Bold";
-        src: url("fonts/Rawline SemiBold.ttf") format("truetype");
-      }
+    @font-face {
+      font-family: "Bold";
+      src: url("fonts/Rawline SemiBold.ttf") format("truetype");
+    }
 
-      body {
-        font-family: "Raleway", sans-serif;
-        background-color: #ffffff;
-      }
+    body {
+      font-family: "Raleway", sans-serif;
+      background-color: #ffffff;
+    }
 
-      .playfair {
-        font-family: "Playfair Display", serif;
-      }
+    .playfair {
+      font-family: "Playfair Display", serif;
+    }
 
-      /* Dropdown menu */
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
+    /* Dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: white;
-        min-width: 230px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-        text-align: left;
-      }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 230px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      text-align: left;
+    }
 
-      .dropdown-content a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
 
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-    </style>
-  </head>
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
 
-  <body class="min-h-screen flex flex-col">
-    <!-- Header/Navigation -->
-    <header class="w-full max-w-7xl mx-auto px-6 md:px-12">
-      <div class="border-b border-pink-700">
-        <nav class="flex justify-center">
-          <ul
-            class="flex space-x-8 md:space-x-12 font-Roman text-lg uppercase tracking-wider text-primary"
-          >
-            <li>
-              <a
-                href="index.html"
-                class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300"
-                >Home</a
-              >
-            </li>
+<body class="min-h-screen flex flex-col">
+  <!-- Header/Navigation -->
+  <header class="w-full max-w-7xl mx-auto px-6 md:px-12">
+    <div class="border-b border-pink-700">
+      <nav class="flex justify-center">
+        <ul class="flex space-x-8 md:space-x-12 font-Roman text-lg uppercase tracking-wider text-primary">
+          <li>
+            <a href="index.html"
+              class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300">Home</a>
+          </li>
 
-            <li>
-              <a
-                href="about.html"
-                class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300"
-                >About</a
-              >
-            </li>
+          <li>
+            <a href="about.html"
+              class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300">About</a>
+          </li>
 
-            <li class="dropdown">
-              <a
-                class="font-medium flex items-center py-4 hover:text-pink-700 transition-colors duration-300"
-              >
-                Works <i class="fas fa-chevron-down ml-1 text-xs"></i>
-              </a>
+          <li class="dropdown">
+            <a class="font-medium flex items-center py-4 hover:text-pink-700 transition-colors duration-300">
+              Works <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </a>
 
-              <div
-                class="dropdown-content font-Roman text-[16px] normal-case font-[500] border-t-4 border-pink-700"
-              >
-                <a
-                  href="series1.html"
-                  class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200"
-                  >Eyes (2021)</a
-                >
-                <a
-                  href="series2.html"
-                  class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200"
-                  >Inside Wombs (2021)</a
-                >
-                <a
-                  href="series3.html"
-                  class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200"
-                  >Entrance (2022)</a
-                >
-                <a
-                  href="series4.html"
-                  class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200"
-                  >Blackhole (2022)</a
-                >
-                <a
-                  href="series5.html"
-                  class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200"
-                  >With You (2022)</a
-                >
-                <a
-                  href="series6.html"
-                  class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200"
-                  >Transforming (2024)</a
-                >
-              </div>
-            </li>
+            <div class="dropdown-content font-Roman text-[16px] normal-case font-[500] border-t-4 border-pink-700">
+              <a href="series1.html"
+                class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200">Eyes
+                (2021)</a>
+              <a href="series2.html"
+                class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200">Inside
+                Wombs (2021)</a>
+              <a href="series3.html"
+                class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200">Entrance
+                (2022)</a>
+              <a href="series4.html"
+                class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200">Blackhole
+                (2022)</a>
+              <a href="series5.html"
+                class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200">With
+                You (2022)</a>
+              <a href="series6.html"
+                class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200">Transforming
+                (23-24)</a>
+              <a href="series7.html"
+                class="text-primary hover:text-pink-700 transition-colors duration-300 border-b border-gray-200">Becoming
+                (2024)</a>
+            </div>
+          </li>
 
-            <li>
-              <a
-                href="bio.html"
-                class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300"
-                >Bio</a
-              >
-            </li>
+          <li>
+            <a href="bio.html" class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300">Bio</a>
+          </li>
 
-            <li>
-              <a
-                href="contact.html"
-                class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+          <li>
+            <a href="contact.html"
+              class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main class="flex-grow px-6 md:px-12 py-12">
-      <div class="max-w-6xl mx-auto">
-        <div class="flex flex-col md:flex-row gap-12">
-          <!-- Text Content (Left) -->
-          <div
-            class="md:w-1/2 space-y-12 font-Roman text-[16px] text-secondary"
-          >
-            <p>Xinzhi Li is an Artist from Melbourne, Australia.</p>
+  <!-- Main Content -->
+  <main class="flex-grow px-6 md:px-12 py-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row gap-12">
+        <!-- Text Content (Left) -->
+        <div class="md:w-1/2 space-y-12 font-Roman text-[16px] text-secondary">
+          <p>Xinzhi Li (b. 2000, Hunan, China) is an emerging artist based in Melbourne, Australia.</p>
 
-            <p>
-              Xinzhi Li’s practice is based on her childhood traumas and lived
-              experiences. She sees herself as sensitive, fragile, chaotic, and
-              emotional. All the past and new experiences build the core of her
-              spirit and lead her to investigate the intricate dimension of the
-              inner self. She explores the connection between mind and body,
-              consciousness and unconsciousness, memories, dreams, traumas, and
-              fantasies.
-            </p>
+          <p>
+            Her practice is deeply rooted in lived experience and the creative reconstruction of childhood narratives.
+            By positioning herself as a sensitive and fragile observer, Xinzhi explores the intricate dimensions of the
+            ‘inner self’ through the interplay between mind and body, consciousness and the unconscious.
+          </p>
 
-            <p>
-              She often employs oil and watercolour as her painting medium. She
-              contemplates the significance of consciousness and unconsciousness
-              in the artistic process and the influence of different mediums and
-              approaches to creation. She likes to work intuitively and share
-              the control of the artworks with unconsciousness and those
-              mediums. She uses paper and canvas as they are fragile, like our
-              skin and that of human beings. The subject matters in her practice
-              are always ‘luminous’, ‘colourful’, ‘watery’, ‘moving’,
-              ‘intangible’ and ‘ambiguous’ as they show the boundary, the moment
-              between moments and her chaos—the chaos of thoughts, emotion, and
-              energy, the result of trauma and experiences. Through thinking and
-              creating works, she starts to know and heal her inner self and
-              find her place in the river of time.
-            </p>
-          </div>
+          <p>
+            Working intuitively across oil and watercolour, she shares the agency of creation with the mediums
+            themselves. She envisions her paintings as a ‘fragile skin’ where every mark emerges as a vital ‘organ’ of
+            her being. Through subject matter that remains ‘luminous’ yet ‘ambiguous’, her work maps the boundaries of
+            chaos—the intersection of thought, emotion, and energy. In this ‘moment between moments’, the act of
+            painting becomes a meditative process of healing, allowing her to locate a sense of self within the
+            relentless river of time.
+          </p>
+        </div>
 
-          <!-- Portrait Image (Right) -->
-          <div class="md:w-1/2">
-            <img
-              src="asset/portrait.jpg"
-              alt="Portrait of Xinzhi Li"
-              class="w-full h-auto shadow-md"
-            />
-          </div>
+        <!-- Portrait Image (Right) -->
+        <div class="md:w-1/2">
+          <img src="asset/portrait.jpg" alt="Portrait of Xinzhi Li" class="w-full h-auto shadow-md" />
         </div>
       </div>
-    </main>
-    <!--
-    <section
-      class="w-full py-16 bg-white"
-      style="font-family: 'Noto Serif SC', serif"
-    >
-      <div class="max-w-4xl mx-auto px-4">
-        <blockquote
-          class="text-center"
-          style="display: flex; align-items: center; justify-content: center"
-        >
-          <span
-            style="
-              font-size: 3rem;
-              color: #f3d5d5;
-              font-family: serif;
-              margin-right: 0.5rem;
-              align-self: flex-start;
-            "
-            >"</span
-          >
-          <div>
-            <p
-              style="
-                font-size: 1.5rem;
-                color: #1f2937;
-                line-height: 1.75;
-                letter-spacing: 0.025em;
-              "
-            >
-              艺术是治愈和自我发现的旅程，通过创作，我们可以找到与世界和自己内心的深层连接
-            </p>
-            <footer style="margin-top: 2rem; color: #4b5563">
-              <p style="font-size: 1.125rem">— 李欣芷 (Xinzhi Li)</p>
-            </footer>
-          </div>
-          <span
-            style="
-              font-size: 3rem;
-              color: #f3d5d5;
-              font-family: serif;
-              margin-left: 0.5rem;
-              align-self: flex-start;
-            "
-            >"</span
-          >
-        </blockquote>
-      </div>
-    </section>
-    -->
+    </div>
+  </main>
 
-    <!-- Footer -->
-    <footer
-      class="py-6 px-6 md:px-12 border-t border-gray-200 flex justify-end items-center relative"
-    >
-      <p
-        class="text-sm text-secondary absolute left-1/2 -translate-x-1/2 whitespace-nowrap"
-      >
-        Copyright © Xinzhi Li 2026
-      </p>
-      <div>
-        <a
-          href="https://www.instagram.com/dorisssliart/?igsh=amcxZWYxY210eXhn&utm_source=qr#"
-          target="_blank"
-          class="text-secondary hover:text-primary transition-colors duration-300"
-        >
-          <i class="fab fa-instagram text-xl"></i>
-        </a>
-      </div>
-    </footer>
-    <script>
-      document.addEventListener("contextmenu", function (e) {
-        if (e.target.tagName === "IMG") {
-          e.preventDefault();
-        }
-      });
-    </script>
-  </body>
+  <!-- Footer -->
+  <footer class="py-6 px-6 md:px-12 border-t border-gray-200 flex justify-end items-center relative">
+    <p class="text-sm text-secondary absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
+      Copyright © Xinzhi Li 2026
+    </p>
+    <div>
+      <a href="https://www.instagram.com/dorisssliart/?igsh=amcxZWYxY210eXhn&utm_source=qr#" target="_blank"
+        class="text-secondary hover:text-primary transition-colors duration-300">
+        <i class="fab fa-instagram text-xl"></i>
+      </a>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      if (e.target.tagName === "IMG") {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+
 </html>
