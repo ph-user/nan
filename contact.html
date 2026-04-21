@@ -189,24 +189,25 @@
     });
   </script>
 
-  <script>
-    const dropdown = document.getElementById('works-dropdown');
-    const dropdownContent = dropdown.querySelector('.dropdown-content');
+<script>
+  const dropdown = document.getElementById('works-dropdown');
+  const dropdownContent = dropdown.querySelector('.dropdown-content');
 
-    // Toggle dropdown on click/tap
-    dropdown.addEventListener('click', function (e) {
-      // Prevents the click from bubbling up to the window
-      e.stopPropagation();
-      dropdownContent.classList.toggle('show');
-    });
+  // Toggle dropdown on click/tap
+  dropdown.addEventListener('click', function(e) {
+    // This stops the click from immediately triggering the "window" click event below
+    e.stopPropagation();
+    dropdownContent.classList.toggle('show');
+  });
 
-    // Close the dropdown if the user clicks anywhere else on the page
-    window.addEventListener('click', function () {
-      if (dropdownContent.classList.contains('show')) {
-        dropdownContent.classList.remove('show');
-      }
-    });
-  </script>
+  // Close the dropdown if the user clicks anywhere on the screen
+  window.addEventListener('click', function(event) {
+    // If the menu is open and the user clicks something that isn't the dropdown
+    if (dropdownContent.classList.contains('show')) {
+      dropdownContent.classList.remove('show');
+    }
+  });
+</script>
 </body>
 
 </html>
