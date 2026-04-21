@@ -244,30 +244,30 @@
       </a>
     </div>
   </footer>
-
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      if (e.target.tagName === "IMG") {
+        e.preventDefault();
+      }
+    });
+  </script>
+  
 <script>
   const dropdown = document.getElementById('works-dropdown');
   const dropdownContent = dropdown.querySelector('.dropdown-content');
 
-  // 1. Toggle dropdown on click
+  // Toggle dropdown on click/tap
   dropdown.addEventListener('click', function(e) {
-    // If the user clicks the "Works" text itself, toggle the menu
+    // This stops the click from immediately triggering the "window" click event below
     e.stopPropagation();
     dropdownContent.classList.toggle('show');
   });
 
-  // 2. Close menu when clicking anywhere else
+  // Close the dropdown if the user clicks anywhere on the screen
   window.addEventListener('click', function(event) {
-    // Check if the click happened outside the dropdown
-    if (!dropdown.contains(event.target)) {
+    // If the menu is open and the user clicks something that isn't the dropdown
+    if (dropdownContent.classList.contains('show')) {
       dropdownContent.classList.remove('show');
-    }
-  });
-
-  // 3. Your original Image Protection code
-  document.addEventListener("contextmenu", function (e) {
-    if (e.target.tagName === "IMG") {
-      e.preventDefault();
     }
   });
 </script>
