@@ -71,6 +71,10 @@
       text-align: left;
     }
 
+    .dropdown-content.show {
+      display: block;
+    }
+
     .dropdown-content a {
       padding: 12px 16px;
       text-decoration: none;
@@ -99,8 +103,9 @@
               class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300">About</a>
           </li>
 
-          <li class="dropdown">
-            <a class="font-medium flex items-center py-4 hover:text-pink-700 transition-colors duration-300">
+          <li class="dropdown" id="works-dropdown">
+            <a href="javascript:void(0)"
+              class="font-medium flex items-center py-4 hover:text-pink-700 transition-colors duration-300">
               Works <i class="fas fa-chevron-down ml-1 text-xs"></i>
             </a>
 
@@ -190,6 +195,25 @@
     document.addEventListener("contextmenu", function (e) {
       if (e.target.tagName === "IMG") {
         e.preventDefault();
+      }
+    });
+  </script>
+
+  <script>
+    const dropdown = document.getElementById('works-dropdown');
+    const dropdownContent = dropdown.querySelector('.dropdown-content');
+
+    // Toggle dropdown on click/tap
+    dropdown.addEventListener('click', function (e) {
+      // Prevents the click from bubbling up to the window
+      e.stopPropagation();
+      dropdownContent.classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks anywhere else on the page
+    window.addEventListener('click', function () {
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
       }
     });
   </script>
