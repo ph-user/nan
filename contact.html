@@ -1,94 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Xinzhi Li</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#333333",
-              secondary: "#666666",
-            },
-            fontFamily: {
-              playfair: ['"Playfair Display"', "serif"],
-              raleway: ["Raleway", "sans-serif"],
-              Roman: ["Roman", "sans-serif"],
-              Bold: ["Bold", "san-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Xinzhi Li</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#333333",
+            secondary: "#666666",
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', "serif"],
+            raleway: ["Raleway", "sans-serif"],
+            Roman: ["Roman", "sans-serif"],
+            Bold: ["Bold", "san-serif"],
           },
         },
-      };
-    </script>
-    <style>
-      @font-face {
-        font-family: "Roman";
-        src: url("fonts/Times New Roman.ttf") format("truetype");
-      }
+      },
+    };
+  </script>
+  <style>
+    @font-face {
+      font-family: "Roman";
+      src: url("fonts/Times New Roman.ttf") format("truetype");
+    }
 
-      @font-face {
-        font-family: "Raleway-m";
-        src: url("fonts/Raleway-Medium.ttf") format("truetype");
-      }
+    @font-face {
+      font-family: "Raleway-m";
+      src: url("fonts/Raleway-Medium.ttf") format("truetype");
+    }
 
-      @font-face {
-        font-family: "Bold";
-        src: url("fonts/Rawline SemiBold.ttf") format("truetype");
-      }
+    @font-face {
+      font-family: "Bold";
+      src: url("fonts/Rawline SemiBold.ttf") format("truetype");
+    }
 
-      body {
-        font-family: "Raleway", sans-serif;
-        background-color: #ffffff;
-      }
+    body {
+      font-family: "Raleway", sans-serif;
+      background-color: #ffffff;
+    }
 
-      .playfair {
-        font-family: "Playfair Display", serif;
-      }
+    .playfair {
+      font-family: "Playfair Display", serif;
+    }
 
-      /* Dropdown menu */
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
+    /* Dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: white;
-        min-width: 200px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-        z-index: 50;
-        text-align: left;
-      }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+      z-index: 50;
+      text-align: left;
+    }
 
-      .dropdown-content a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+    .dropdown-content.show {
+      display: block;
+    }
 
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-    </style>
-  </head>
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
 
-  <body class="min-h-screen flex flex-col">
-    <!-- Header/Navigation -->
-    <header class="w-full max-w-7xl mx-auto px-6 md:px-12">
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <!-- Header/Navigation -->
+  <header class="w-full max-w-7xl mx-auto px-6 md:px-12">
     <div class="border-b border-pink-700">
       <nav class="flex justify-center">
         <ul class="flex space-x-8 md:space-x-12 font-Roman text-lg uppercase tracking-wider text-primary">
@@ -101,9 +102,9 @@
             <a href="about.html"
               class="flex items-center py-4 hover:text-pink-700 transition-colors duration-300">About</a>
           </li>
-
-          <li class="dropdown">
-            <a class="font-medium flex items-center py-4 hover:text-pink-700 transition-colors duration-300">
+          <li class="dropdown" id="works-dropdown">
+            <a href="javascript:void(0)"
+              class="font-medium flex items-center py-4 hover:text-pink-700 transition-colors duration-300">
               Works <i class="fas fa-chevron-down ml-1 text-xs"></i>
             </a>
 
@@ -145,62 +146,67 @@
     </div>
   </header>
 
-    <main
-      class="flex-grow px-6 py-32 md:py-48 max-w-3xl mx-auto flex flex-col items-center justify-center"
-    >
-      <div class="text-center space-y-8 text-gray-600">
-        <h1 class="text-2xl md:text-3xl font-medium text-gray-700">
-          Xinzhi (Doris) Li
-        </h1>
+  <main class="flex-grow px-6 py-32 md:py-48 max-w-3xl mx-auto flex flex-col items-center justify-center">
+    <div class="text-center space-y-8 text-gray-600">
+      <h1 class="text-2xl md:text-3xl font-medium text-gray-700">
+        Xinzhi (Doris) Li
+      </h1>
 
-        <p class="text-xl md:text-2xl font-light">
-          Instagram:
-          <a
-            href="https://www.instagram.com/dorisssliart/?igsh=amcxZWYxY210eXhn&utm_source=qr#"
-            target="_blank"
-            class="hover:text-primary transition-colors duration-300"
-          >
-            @Dorisssliart
-          </a>
-        </p>
-
-        <p class="text-xl md:text-2xl font-light">
-          Email:
-          <a
-            href="mailto:XinzhiLi2000@outlook.com"
-            class="hover:text-primary transition-colors duration-300"
-          >
-            XinzhiLi2000@outlook.com
-          </a>
-        </p>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer
-      class="py-6 px-6 md:px-12 border-t border-gray-200 flex justify-end items-center relative"
-    >
-      <p
-        class="text-sm text-secondary absolute left-1/2 -translate-x-1/2 whitespace-nowrap"
-      >
-        Copyright © Xinzhi Li 2026
-      </p>
-      <div>
-        <a
-          href="https://www.instagram.com/dorisssliart/?igsh=amcxZWYxY210eXhn&utm_source=qr#"
-          target="_blank"
-          class="text-secondary hover:text-primary transition-colors duration-300"
-        >
-          <i class="fab fa-instagram text-xl"></i>
+      <p class="text-xl md:text-2xl font-light">
+        Instagram:
+        <a href="https://www.instagram.com/dorisssliart/?igsh=amcxZWYxY210eXhn&utm_source=qr#" target="_blank"
+          class="hover:text-primary transition-colors duration-300">
+          @Dorisssliart
         </a>
-      </div>
-    </footer>
-    <script>
-      document.addEventListener("contextmenu", function (e) {
-        if (e.target.tagName === "IMG") {
-          e.preventDefault();
-        }
-      });
-    </script>
-  </body>
+      </p>
+
+      <p class="text-xl md:text-2xl font-light">
+        Email:
+        <a href="mailto:XinzhiLi2000@outlook.com" class="hover:text-primary transition-colors duration-300">
+          XinzhiLi2000@outlook.com
+        </a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 px-6 md:px-12 border-t border-gray-200 flex justify-end items-center relative">
+    <p class="text-sm text-secondary absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
+      Copyright © Xinzhi Li 2026
+    </p>
+    <div>
+      <a href="https://www.instagram.com/dorisssliart/?igsh=amcxZWYxY210eXhn&utm_source=qr#" target="_blank"
+        class="text-secondary hover:text-primary transition-colors duration-300">
+        <i class="fab fa-instagram text-xl"></i>
+      </a>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("contextmenu", function (e) {
+      if (e.target.tagName === "IMG") {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <script>
+    const dropdown = document.getElementById('works-dropdown');
+    const dropdownContent = dropdown.querySelector('.dropdown-content');
+
+    // Toggle dropdown on click/tap
+    dropdown.addEventListener('click', function (e) {
+      // Prevents the click from bubbling up to the window
+      e.stopPropagation();
+      dropdownContent.classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks anywhere else on the page
+    window.addEventListener('click', function () {
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+
 </html>
